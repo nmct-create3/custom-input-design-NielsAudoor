@@ -658,6 +658,7 @@ input::placeholder {
   width: 16px;
   border: 1px solid var(--global-input-borderColor);
   margin-right: 8px;
+  margin-bottom: 8px;
   text-shadow: var(--global-input-boxShadow);
 }
 
@@ -705,6 +706,32 @@ input::placeholder {
   -o-transition: all 500ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
   transition: all 500ms cubic-bezier(0.25, 0.25, 0.75, 0.75); /* linear */
 }
+
+.c-option--hidden:hover + .c-custom-option .c-custom-option__fake-input--checkbox{
+  border-color: #81adf0;
+}
+
+
+.c-option--hidden:focus + .c-custom-option .c-custom-option__fake-input--checkbox,
+.c-option--hidden:active + .c-custom-option .c-custom-option__fake-input--checkbox
+{
+  border-color: #81adf0;
+  box-shadow: 0 0 0 3px #3385ff36;
+}
+
+
+.c-option--hidden:hover + .c-custom-option .c-custom-option__fake-input--radio{
+  border-color: #81adf0;
+}
+
+
+.c-option--hidden:focus + .c-custom-option .c-custom-option__fake-input--radio,
+.c-option--hidden:active + .c-custom-option .c-custom-option__fake-input--radio
+{
+  border-color: #81adf0;
+  box-shadow: 0 0 0 3px #3385ff36;
+}
+
 
 /*
     Component: Label
